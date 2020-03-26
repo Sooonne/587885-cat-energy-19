@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Мария](https://up.htmlacademy.ru/adaptive/19/user/587885).
-* Наставник: `Неизвестно`.
+* Наставник: `Роман Духницький`(https://htmlacademy.ru/profile/id59884).
 
 ---
 
