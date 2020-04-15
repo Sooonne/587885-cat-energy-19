@@ -3,17 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
     <header class="page-header">
       <a class="page-header__logo logo">
-        <img class="page-header__logo__img logo__img" src="https://via.placeholder.com/150x150" alt="Cat Energy">
+        <img class="page-header__logo__img logo__img" src="img/logo-mobile.svg" alt="Cat Energy">
       </a>
 
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
+        <button class="main-nav__toggle" type="button"><img src="img/icon-mobile-menu.svg" alt="Open menu button">></button>
+        <div class="main-nav__wrapper visually-hidden">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a>ГЛАВНАЯ</a>
@@ -34,36 +35,47 @@
 
       <section class="first-screen">
         <h1 class="visually-hidden">Cat Energy - сервис для подборки питания вашего питомца</h1>
-        <div class="first-screen__article">
-          <h2 class="intro__title">Функциональное питание для котов</h2>
-          <div class="intro__slogan">Занялся собой? Займись котом!</div>
+        <div class="first-screen__text">
+          <h2 class="first-screen__title">Функциональное питание для котов</h2>
+          <div class="first-screen__slogan">Занялся собой? Займись котом!</div>
         </div>
         <div class="first-screen__link">
           <a href="#">Подобрать программу</a>
         </div>
         <div class="first-screen__img">
-          <img src="https://via.placeholder.com/150x150" alt="Cat Energy Pro Курица">
+          <img src="img/index-can-mobile@1x.png" alt="Cat Energy Pro Курица">
         </div>
       </section>
 
       <section class="options">
         <ul class="options__list">
-          <li class="oprions__list__item options__item">
-            <img class="options__item__img" src="https://via.placeholder.com/150x150" alt="Стройный кот">
+          <li class="oprions__list__item options__item__slim">
+            <div class="options__item__img slim__img">
+              <img src="img/icon-cat-slim.svg" alt="Стройный кот">
+            </div>
             <dl class="options__item__text">
               <dt>Похудение</dt>
-              <dd>Ваш кот весит больше собаки и почти утратил способность лазить </dd>
+              <dd>Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес. </dd>
             </dl>
-          <div class="options__item__link"><a>Каталог Slim</a></div>
+          <div class="options__item__link">
+            <a>Каталог Slim</a>
+            <img src="img/icon-right-arrow-long.svg" alt="right arrow">
+          </div>
 
           </li>
           <li class="oprions__list__item options__item">
-            <img class="options__item__img" src="https://via.placeholder.com/150x150" alt="Подтянутый мускулистый кот">
+            <div class="options__item__img pro__img">
+              <img src="img/icon-cat-pro.svg" alt="Подтянутый мускулистый кот">
+            </div>
             <dl class="options__item__text">
               <dt>Набор массы</dt>
-              <dd>Заработать авторитет среди дворовых котов и даже собак? Серия C </dd>
+              <dd>Заработать авторитет среди дворовых котов и даже собак?
+                Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы! </dd>
             </dl>
-            <div class="options__item__link"><a>Каталог pro</a></div>
+            <div class="options__item__link">
+              <a>Каталог pro</a>
+              <img src="img/icon-right-arrow-long.svg" alt="right arrow">
+            </div>
           </li>
         </ul>
       </section>
