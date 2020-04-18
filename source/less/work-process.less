@@ -1,11 +1,11 @@
 .work-process {
- // display: flex;
- // flex-direction: column;
+// display: flex;
+// flex-direction: column;
  margin-left: 20px;
 }
 
 .work-process__title {
-  // margin-left: 22px;
+  margin-left: 22px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -18,18 +18,33 @@
   list-style-type: none;
 }
 
+.work-points {
+  display: flex;
+  flex-direction: column;
+  padding-inline-start: 0px;
+  margin-left: 20px;
+}
+
+.work-points__item {
+  display: flex;
+  align-items: center;
+}
+
 .work-points__item__img {
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   background-color: #68b738;
+  display: flex;
+  align-items: center;
 }
 
 .work-points__item__img img {
   display: block;
-  margin: 0 auto;
+  margin: auto auto;
 }
 
 .work-points__item__description {
+  margin-left: 20px;
   font-family: Arial;
   font-size: 14px;
   font-weight: normal;

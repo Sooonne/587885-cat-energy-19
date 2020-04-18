@@ -1,18 +1,27 @@
+.footer {
+  background-color: #f2f2f2;
+
+}
+
 .footer__logo {
   width: 128px;
   height: 24px;
   margin-left: 96px;
-  margin-top: 37px;
+  padding-top: 37px;
+  padding-bottom: 31px;
 }
 
 .social__list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  text-align: center;
   list-style-type: none;
   height: 62px;
+  padding-inline-start: 0px;
 }
 
 .social__link--vkontakte img {
+  margin-left: 93px;
   width: 22px;
   height: 12px;
   object-fit: contain;
@@ -28,17 +37,26 @@
   width: 10px;
   height: 19px;
   object-fit: contain;
+  margin-right: 102px;
 }
 
 .copyright {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   min-height: 78px;
 }
 
 .copyright img {
   width: 27px;
   height: 34px;
-  object-fit: contain;
+  // object-fit: contain;
   color: #666666;
+}
+
+.copyright__link {
+  margin-left: 20px;
+}
+
+.copyright__logo {
+  margin-right: 20px;
 }

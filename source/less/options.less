@@ -1,10 +1,31 @@
 .options {
-  margin-top: 22px;
+  margin-top: 2px;
   display: flex;
   flex-direction: column;
 }
 
+.options__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding-inline-start: 0px;
+}
+
+.options__item {
+  display: flex;
+  width: 280px;
+  height: 266px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #f2f2f2;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
 .options__item__img  {
+  margin-top: 24px;
+  margin-left: 22px;
   width: 50px;
   height: 51px;
   background-color: #68b738;
@@ -21,15 +42,13 @@
 .pro__img img {
   width: 67px;
   height: 28px;
-  margin: 0 auto;
+  margin-top: 10px;
+  margin-left: -10px;
   display: block;
 }
 
-.options__list {
-  list-style-type: none;
-}
-
-.options__item__text dt {
+.options__item__title {
+  margin-top: 24px;
   line-height: 37px;
   font-size: 24px;
   font-weight: normal;
@@ -39,12 +58,12 @@
   letter-spacing: normal;
   text-align: left;
   text-transform: uppercase;
+  margin-left: 20px;
 }
 
-.options__item__text dd {
-  margin: 0;
-  padding: 0 36px 23px 21px;
-  color: #444444;
+.options__item__text {
+  padding-left: 21px;
+  padding-right: 34px;
   font-family: Arial;
   font-size: 14px;
   font-weight: normal;
@@ -53,17 +72,27 @@
   line-height: 1.29;
   letter-spacing: normal;
   text-align: left;
+  color: #444444;
+  line-height: 18px;
 }
 
 .options__item__link {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-family: Oswald, sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
 }
 
 .options__item__link img {
   width: 25px;
   height: 12px;
+  margin-left: 10px;
 }
