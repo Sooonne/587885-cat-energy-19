@@ -1,3 +1,16 @@
+.catalog h1 {
+  padding-left: 22px;
+  font-size: 36px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: left;
+  margin-top: 31px;
+
+}
+
 .catalog__list {
   list-style-type: none;
   display: flex;
@@ -89,8 +102,12 @@
 }
 
 .catalog__item__order-button {
-  margin-right: 20px;
   background-color: #68b738;
+  margin-bottom: 25px;
+}
+
+.button {
+  margin-right: 20px;
   height: 40px;
   min-width: 280px;
   font-family: Oswald, sans-serif;
@@ -102,11 +119,39 @@
   letter-spacing: normal;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
-  margin-bottom: 25px;
 }
 
+.catalog__item--more {
+  padding-top: 27px;
+  display: flex;
+  flex-direction: column;
+}
 
+.catalog__item--more__img {
+  width: 31px;
+  height: 31px;
+  object-fit: contain;
+  opacity: 0.2;
+  margin: 0 auto;
+  background-image: url("../img/icon-plus-mobile.svg");
+  background-repeat: no-repeat;
+}
+
+.catalog__item--more__title {
+  font-family: Oswald, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.show-more-button {
+ background-color: #f2f2f2;
+}
 
 
 
