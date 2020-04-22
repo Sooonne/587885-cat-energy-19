@@ -3,17 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
     <header class="page-header">
       <a class="page-header__logo logo">
-        <img class="page-header__logo__img logo__img" src="https://via.placeholder.com/150x150" alt="Cat Energy">
+        <img class="page-header__logo__img logo__img" src="img/logo-mobile.svg" alt="Cat Energy">
       </a>
 
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
+        <button class="main-nav__toggle" type="button"><img src="img/icon-mobile-menu.svg" alt="Open menu button"></button>
+        <div class="main-nav__wrapper visually-hidden">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a>ГЛАВНАЯ</a>
@@ -34,69 +35,67 @@
 
       <section class="first-screen">
         <h1 class="visually-hidden">Cat Energy - сервис для подборки питания вашего питомца</h1>
-        <div class="first-screen__article">
-          <h2 class="intro__title">Функциональное питание для котов</h2>
-          <div class="intro__slogan">Занялся собой? Займись котом!</div>
+        <div class="first-screen__text">
+          <h2 class="first-screen__title">Функциональное питание для котов</h2>
+          <div class="first-screen__slogan">Занялся собой? Займись котом!</div>
         </div>
         <div class="first-screen__link">
           <a href="#">Подобрать программу</a>
         </div>
         <div class="first-screen__img">
-          <img src="https://via.placeholder.com/150x150" alt="Cat Energy Pro Курица">
+          <img src="img/index-can-mobile@1x.png" alt="Cat Energy Pro Курица">
         </div>
       </section>
 
       <section class="options">
         <ul class="options__list">
-          <li class="oprions__list__item options__item">
-            <img class="options__item__img" src="https://via.placeholder.com/150x150" alt="Стройный кот">
-            <dl class="options__item__text">
-              <dt>Похудение</dt>
-              <dd>Ваш кот весит больше собаки и почти утратил способность лазить </dd>
-            </dl>
-          <div class="options__item__link"><a>Каталог Slim</a></div>
-
+          <li class="options__list__item options__item">
+            <div class="options__item__img slim__img"><img src="img/icon-cat-slim.svg" alt="Стройный кот"></div>
+            <div class="options__item__title">Похудение</div>
+            <div class="options__item__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</div>
+            <div class="options__item__link">
+              <a>Каталог Slim</a>
+              <img src="img/icon-right-arrow-long.svg" alt="right arrow">
+            </div>
           </li>
-          <li class="oprions__list__item options__item">
-            <img class="options__item__img" src="https://via.placeholder.com/150x150" alt="Подтянутый мускулистый кот">
-            <dl class="options__item__text">
-              <dt>Набор массы</dt>
-              <dd>Заработать авторитет среди дворовых котов и даже собак? Серия C </dd>
-            </dl>
-            <div class="options__item__link"><a>Каталог pro</a></div>
+          <li class="options__list__item options__item">
+            <div class="options__item__img pro__img"><img src="img/icon-cat-pro.svg" alt="Подтянутый мускулистый кот"></div>
+            <div class="options__item__title">Набор массы</div>
+            <div class="options__item__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</div>
+            <div class="options__item__link">
+              <a>Каталог pro</a>
+              <img src="img/icon-right-arrow-long.svg" alt="right arrow">
+            </div>
           </li>
         </ul>
       </section>
 
       <section class="work-process">
-        <h2>Как это работает</h2>
+        <h2 class="work-process__title">Как это работает</h2>
         <ul class="work-process__points work-points">
           <li class="work-points__item">
+            <div class="work-points__item__img"><img src="img/advantage-leaf@1x.png" alt="useful ingredients"></div>
             <h3 class="work-points__item__description">Функциональное питание содержит только полезные питательные вещества.</h3>
-            <div class="work-points__item__img"><img src="https://via.placeholder.com/150x150" alt="useful ingredients"></div>
-            <div class="work-points__item__step">1</div>
+            <!--<div class="work-points__item__step">1</div> -->
           </li>
 
           <li class="work-points__item">
+            <div class="work-points__item__img"><img src="img/advantage-powder@1x.png" alt="tasty powder"></div>
             <h3 class="work-points__item__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</h3>
-            <div class="work-points__item__img"><img src="https://via.placeholder.com/150x150" alt="
-              tasty powder"></div>
-            <div class="work-points__item__step">2</div>
+            <!--<div class="work-points__item__step">2</div>-->
+
           </li>
 
           <li class="work-points__item">
+            <div class="work-points__item__img"><img src="img/advantage-dining@1x.png" alt="functional nutrition"></div>
             <h3 class="work-points__item__description">Замените один-два приема обычной еды на наше функциональное питание.</h3>
-            <div class="work-points__item__img"><img src="https://via.placeholder.com/150x150" alt="
-              functional nutrition"></div>
-            <div class="work-points__item__step">3</div>
+            <!--<div class="work-points__item__step">3</div>-->
           </li>
 
           <li class="work-points__item">
-            <h3 class="work-points__item__description">Уже через месяц наслаждайтесь изменениями к лучшему
-              вашего питомца!</h3>
-            <div class="work-points__item__img"><img src="https://via.placeholder.com/150x150" alt="
-              short-term result"></div>
-            <div class="work-points__item__step">4</div>
+            <div class="work-points__item__img"><img src="img/advantage-clock@1x.png" alt="short-term result"></div>
+            <h3 class="work-points__item__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</h3>
+            <!--<div class="work-points__item__step">4</div>-->
           </li>
         </ul>
       </section>
@@ -111,26 +110,26 @@
 
     <footer class="footer">
       <div class="footer__logo logo--footer">
-        <img src="https://via.placeholder.com/150x150" alt="Cat Energy">
+        <img src="img/logo-footer.svg" alt="Cat Energy">
       </div>
 
       <div class="footer__social social">
         <ul class="social__list">
-          <li class="social__item">
+          <li class="social__item social__vk">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              <img src="https://via.placeholder.com/150x150" alt="vk logo">
+              <img src="img/icon-vk.svg" alt="vk logo">
             </a>
           </li>
 
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-              <img src="https://via.placeholder.com/150x150" alt="instagram logo">
+          <li class="social__item social__insta">
+            <a class="social__link social__link--insta" href="https://www.instagram.com/htmlacademy">
+              <img src="img/icon-insta.svg" alt="instagram logo">
             </a>
           </li>
 
-          <li class="social__item">
+          <li class="social__item social__fb">
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-              <img src="https://via.placeholder.com/150x150" alt="facebook logo">
+              <img src="img/icon-fb.svg" alt="facebook logo">
             </a>
           </li>
         </ul>
@@ -138,7 +137,7 @@
 
       <div class="footer__copyright copyright">
         <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <img class="copyright__img" src="https://via.placeholder.com/150x150" alt="Cat Energy">
+        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive"><img class="copyright__img" src="img/htmlacademy.svg" alt="Cat Energy"></a>
       </div>
     </footer>
 
