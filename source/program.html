@@ -17,18 +17,105 @@
         <div class="main-nav__wrapper visually-hidden">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a>ГЛАВНАЯ</a>
+              <a href="index.html">ГЛАВНАЯ</a>
             </li>
             <li class="site-list__item">
               <a href="catalog.html">КАТАЛОГ ПРОДУКЦИИ</a>
             </li>
             <li class="site-list__item">
-              <a href="program.html">ПОДБОР ПРОГРАММЫ</a>
+              <a href="#">ПОДБОР ПРОГРАММЫ</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
+
+    <main>
+
+      <section class="profile">
+        <h1 class="profile__title">Подбор программы</h1>
+        <h2 class="profile__subtitle">Заполните анкету и мы подберем
+          программу питания для вашего кота</h2>
+          <form class="profile__form" action="https://echo.htmlacademy.ru" method="POST">
+            <fieldset class="profile__form__personal-info">
+              <label>Имя:*
+                <input class="profile__form__personal-info__name" type="text" id="name" placeholder="Барсик" required>
+              </label>
+              <label>Вес (кг):*
+                <input class="profile__form__personal-info__weight" type="number" id="weight" placeholder="7" required>
+              </label>
+              <label>Возраст (лет):
+                <input class="profile__form__personal-info__age" type="number" id="age" placeholder="7">
+              </label>
+            </fieldset>
+
+            <fieldset class="profile__form__program__type">
+              <label>
+                <input type="radio" name="program__type" value="lose-weigth" checked>
+                Похудение
+              </label>
+              <label>
+                <input type="radio" name="program__type" value="increase-weigth">
+                Набор массы
+              </label>
+              <label>
+                <input type="radio" name="program__type" value="undefined">
+                Не знаю (Нужен ваш совет)
+              </label>
+            </fieldset>
+
+            <fieldset class="profile__form__contacts">
+              <legend>Контактные данные
+                (владельца кота)</legend>
+                <label>E-mail:*
+                  <input class="profile__form__contacts__email" type="email" id="email" placeholder="kuklachev@gmail.com" required>
+                </label>
+                <label>Телефон:*
+                  <input class="profile__form__contacts__tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+                </label>
+            </fieldset>
+
+            <fieldset class="profile__form__comments">
+              <legend>Комментарий</legend>
+              <textarea class="profile__form__comments__about-cat" name="comment" id="comment" rows="5">Расскажите обо всех повадках кота</textarea>
+            </fieldset>
+
+            <fieldset class="profile__form__additions">
+              <label>
+                <input class="profile__form__additions__item" type="checkbox" name="sweetener" id="sweetener" checked>
+                Сахарозаменитель
+              </label>
+              <label>
+                <input class="profile__form__additions__item" type="checkbox" name="water" id="water">
+                Питьевая вода
+              </label>
+              <label>
+                <input class="profile__form__additions__item" type="checkbox" name="milk" id="milk">
+                Молоко
+              </label>
+              <label>
+                <input class="profile__form__additions__item" type="checkbox" name="vitamins" id="vitamins">
+                Витамины
+              </label>
+            </fieldset>
+
+            <input class="profile__form__submit button" type="submit" value="Отправить заявку">
+            <div class="profile__form__required-info">* — Обязательные поля</div>
+          </form>
+      </section>
+
+      <section class="contacts">
+        <div class="contacts__text">
+          <div class="contacts__text__slogan"> приглашаем к сотрудничеству дилеров!</div>
+          <div class="contacts__text__address">ул. Большая Конюшенная, д. 19/8 </div>
+          <div class="contacts__text__city">Санкт-Петербург</div>
+        </div>
+        <div class="contacts__imgs">
+          <div class="contacts__imgs__city"><img src="img/bg-map-mobile@1x.png" alt="Карта города"></div>
+          <div class="contacts__imgs__pin"><img src="img/map-pin.png" alt="Наше местоположение на городе"></div>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="footer__logo logo--footer">
