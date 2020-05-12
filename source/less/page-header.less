@@ -34,6 +34,8 @@
     z-index: 1;
     position: absolute;
     left: 0px;
+    width: 100%;
+
   }
 }
 
@@ -46,21 +48,24 @@
   padding-inline-start: 0px;
 
   &__item {
+    border-top: 1px solid #ededed;
+    width: 100%;
     min-height: 65px;
     display: flex;
-    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+
 
     a {
       color: black;
       font-size: 20px;
-      font-weight: 500;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1;
-      letter-spacing: normal;
       text-align: center;
-      margin: auto;
+      // margin: auto;
     }
+  }
+
+  &__item:nth-child(3) {
+    border-bottom: 1px solid #ededed;
   }
 }
 

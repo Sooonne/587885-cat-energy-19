@@ -85,8 +85,6 @@
 
       &__text {
         align-self: center;
-        // margin-bottom: 11px;
-        // margin-top: 0;
       }
 
       &__title {
@@ -194,6 +192,7 @@
           width: 61px;
           height: 61px;
           margin-bottom: 50px;
+          background-color: transparent;
         }
 
         &__title {
@@ -215,17 +214,21 @@
 }
 
 
-// @media (min-width: @desktop-width) {
-//   .catalog {
-//     margin: 0 110px;
+@media (min-width: @desktop-width) {
+  .catalog {
+    margin: 0 110px;
 
-//     &__list {
-//       justify-content: space-between;
-//       margin: 0;
-//     }
-//     &__item {
-//       width: 245px;
-//       height: 431px;
-//     }
-//   }
-// }
+    &__list {
+      justify-content: space-between;
+      margin: 0;
+    }
+    &__item {
+      width: 245px;
+      height: 431px;
+
+      &__button {
+        min-width: 169px;
+      }
+    }
+  }
+}
