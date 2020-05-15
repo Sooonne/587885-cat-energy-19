@@ -1,0 +1,34 @@
+.button {
+  margin-bottom: 25px;
+  max-height: 40px;
+  height: 40px;
+  min-width: 280px;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  flex-grow: 1;
+  background-color: #68b738;
+
+  &--more {
+    background-color: #f2f2f2;
+    color: black;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .button {
+    flex-grow: 1;
+    margin-bottom: 45px;
+    padding: 0;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .button {
+    min-width: 169px;
+  }
+}
