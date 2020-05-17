@@ -1,7 +1,8 @@
 .additions {
   h2 {
-    margin-left: 20px;
+    padding-left: 20px;
     overflow: hidden;
+    font-size: 24px;
   }
 
   h2::after {
@@ -42,30 +43,27 @@
       margin-top: 14px;
     }
 
-    &__volume {
-      font-family: Arial;
-      font-size: 14px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1;
-      letter-spacing: normal;
-      text-align: left;
-      margin-bottom: 14px;
-      color: #444444;
-    }
+    &__info {
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        margin-bottom: 14px;
+        color: #444444;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
 
-    &__price {
-      font-family: Arial;
-      font-size: 14px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1;
-      letter-spacing: normal;
-      text-align: right;
-      margin-bottom: 14px;
-      color: #444444;
+      &__volume {
+        text-align: left;
+      }
+
+      &__price {
+        text-align: right;
+      }
     }
   }
 
@@ -104,6 +102,157 @@
       color: white;
       margin: 0 40px;
       margin-bottom: 43px;
+    }
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .additions {
+    h2 {
+      font-size: 36px;
+      padding-left: 67px;
+    }
+
+    h2::before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      box-sizing: border-box;
+      width: 100%;
+      height: 3px;
+      background-color: #68b738;
+      margin-left: -100%;
+      border: solid #FFF;
+      border-width: 0 37px;
+    }
+
+    h2::after {
+      border-width: 0 37px;
+    }
+
+    &__wrapper {
+      margin: 0 30px;
+    }
+
+    &__item {
+      border: 1px solid #cdcdcd;
+      // box-sizing: border-box;
+      font-size: 16px;
+      align-items: flex-end;
+
+      &__title {
+        font-size: 20px;
+        margin-left: 40px;
+        margin-right: 0;
+        margin-bottom: 23px;
+        margin-top: 28px;
+      }
+
+      &__info {
+        max-width: 224px;
+        margin-right: 38px;
+        margin-bottom: 23px;
+      }
+
+      &__button {
+        flex-grow: 1;
+        min-width: 633px;
+        margin: 0 37px 28px 38px;
+      }
+    }
+
+    &__promo {
+      max-width: 708px; // think about it
+      margin: 0 auto;
+      margin-top: 69px;
+      margin-bottom: 76px;
+      flex-direction: row;
+      width: 100%;
+      min-height: 200px;
+      justify-content: space-between;
+      background-color: yellowgreen;
+
+      &__gift {
+        margin-left: 91px;
+        margin-bottom: 0px;
+      }
+      &__text {
+        margin: 0;
+        margin-right: 125px;
+        max-width: 160px;
+        text-align: left;
+      }
+    }
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .additions {
+    h2 {
+      padding-left: 110px;
+    }
+
+    &__wrapper {
+      margin: 0 110px;
+      margin-top: 75px;
+      margin-bottom: 68px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__list {
+      margin-right: 80px;
+    }
+
+    &__item {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      height: 71px;
+      border-left: none;
+      border-right: none;
+
+      &__title {
+        margin: 0;
+        margin-right: 165px;
+      }
+
+      &__info {
+        margin: 0;
+        margin-right: 39px;
+        margin-top: 8px;
+        max-width: 284px;
+
+      }
+
+      &__button {
+        min-width: 245px;
+        flex-grow: 0;
+        margin: 0;
+      }
+    }
+
+
+    &__promo {
+      margin: 0;
+      max-width: 250px;
+      flex-direction: column;
+      align-items: center;
+      height: 289px;
+
+      &__gift {
+        margin: 0;
+        margin-top: 65px;
+      }
+
+      &__text {
+        margin: 0;
+        margin-bottom: 43px;
+        text-align: center;
+      }
     }
   }
 }
