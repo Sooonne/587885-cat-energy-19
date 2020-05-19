@@ -149,8 +149,9 @@
     &__item {
       margin: 0;
       position: relative;
-      min-width: 570px;
+      max-width: 570px;
       justify-content: flex-end;
+      flex-wrap: nowrap;
 
       &__img {
         position: absolute;
@@ -178,13 +179,17 @@
       &__text {
         margin-left: 52px;
         margin-bottom: 36px;
-        max-width: 462px;
+        margin-right: 70px;
       }
 
       &__link {
         margin-left: 53px;
         margin-bottom: 62px;
       }
+    }
+
+    &__item:first-child {
+      margin-right: 80px;
     }
   }
 }
