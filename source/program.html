@@ -38,78 +38,91 @@
         <h2 class="profile__subtitle">Заполните анкету и мы подберем
           программу питания для вашего кота</h2>
           <form class="profile__form" action="https://echo.htmlacademy.ru" method="POST">
-            <fieldset class="profile__form__personal-info">
-              <label>Имя:*
-                <input class="profile__form__personal-info__name" type="text" id="name" placeholder="Барсик" required>
-              </label>
-              <label>Вес (кг):*
-                <input class="profile__form__personal-info__weight" type="number" id="weight" placeholder="7" required>
-              </label>
-              <label>Возраст (лет):
-                <input class="profile__form__personal-info__age" type="number" id="age" placeholder="7">
-              </label>
-            </fieldset>
-
-            <fieldset class="profile__form__program__type">
-              <label>
-                <input type="radio" name="program__type" value="lose-weigth" checked>
-                Похудение
-              </label>
-              <label>
-                <input type="radio" name="program__type" value="increase-weigth">
-                Набор массы
-              </label>
-              <label>
-                <input type="radio" name="program__type" value="undefined">
-                Не знаю (Нужен ваш совет)
-              </label>
-            </fieldset>
-
-            <fieldset class="profile__form__contacts">
-              <legend>Контактные данные
-                (владельца кота)</legend>
-                <label>E-mail:*
-                  <input class="profile__form__contacts__email" type="email" id="email" placeholder="kuklachev@gmail.com" required>
+            <div class="profile__form__wrapper-info">
+              <fieldset class="profile__form__personal-info profile__form__fieldset">
+                <label class="profile__form__personal-info__label">Имя:*
+                  <input class="profile__form__personal-info__input" type="text" id="name" placeholder="Барсик" required>
                 </label>
-                <label>Телефон:*
-                  <input class="profile__form__contacts__tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+                <label class="profile__form__personal-info__label">Вес (кг):*
+                  <input class="profile__form__personal-info__input" type="number" id="weight" placeholder="7" required>
                 </label>
+                <label class="profile__form__personal-info__label">Возраст (лет):
+                  <input class="profile__form__personal-info__input" type="number" id="age" placeholder="7">
+                </label>
+              </fieldset>
+
+              <fieldset class="profile__form__program-type profile__form__fieldset">
+                <label class="profile__form__program-type__label">
+                  <input type="radio" name="program-type" value="lose-weigth" checked>
+                  <span>Похудение</span>
+                </label>
+                <label class="profile__form__program-type__label">
+                  <input type="radio" name="program-type" value="increase-weigth">
+                  <span>Набор массы</span>
+                </label>
+                <label class="profile__form__program-type__label">
+                  <input type="radio" name="program-type" value="undefined">
+                  <span>Не знаю (Нужен ваш совет)</span>
+                </label>
+              </fieldset>
+            </div>
+
+            <fieldset class="profile__form__contacts profile__form__fieldset">
+              <div class="profile__form__title profile__form__title--two-strings">Контактные данные
+                (владельца кота)</div>
+                <div class="profile__form__contacts__wrapper">
+                  <label class="profile__form__contacts__label">E-mail:*
+                    <input class="profile__form__contacts__input" type="email" id="email" placeholder="kuklachev@gmail.com" required>
+                  </label>
+                  <label class="profile__form__contacts__label">Телефон:*
+                    <input class="profile__form__contacts__input" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+                  </label>
+                </div>
             </fieldset>
 
-            <fieldset class="profile__form__comments">
-              <legend>Комментарий</legend>
-              <textarea class="profile__form__comments__about-cat" name="comment" id="comment" rows="5">Расскажите обо всех повадках кота</textarea>
+            <fieldset class="profile__form__comments profile__form__fieldset">
+              <div class="profile__form__title">Комментарий</div>
+              <div class="profile__form__comments__textarea">
+                <textarea class="profile__form__comments__about-cat" name="comment" id="comment" rows="5">Расскажите обо всех повадках кота</textarea>
+              </div>
             </fieldset>
 
-            <fieldset class="profile__form__additions">
-              <label>
-                <input class="profile__form__additions__item" type="checkbox" name="sweetener" id="sweetener" checked>
-                Сахарозаменитель
-              </label>
-              <label>
-                <input class="profile__form__additions__item" type="checkbox" name="water" id="water">
-                Питьевая вода
-              </label>
-              <label>
-                <input class="profile__form__additions__item" type="checkbox" name="milk" id="milk">
-                Молоко
-              </label>
-              <label>
-                <input class="profile__form__additions__item" type="checkbox" name="vitamins" id="vitamins">
-                Витамины
-              </label>
+            <fieldset class="profile__form__additions profile__form__fieldset">
+              <div class="profile__form__title">Дополнительно</div>
+              <div class="profile__form__additions__wrapper">
+                <label class="profile__form__additions__label">
+                  <input class="profile__form__additions__item" type="checkbox" name="sweetener" id="sweetener" checked>
+                  <span>Сахарозаменитель</span>
+                </label>
+                <label class="profile__form__additions__label">
+                  <input class="profile__form__additions__item" type="checkbox" name="water" id="water">
+                  <span>Питьевая вода</span>
+                </label>
+                <label class="profile__form__additions__label">
+                  <input class="profile__form__additions__item" type="checkbox" name="milk" id="milk">
+                  <span>Молоко</span>
+                </label>
+                <label class="profile__form__additions__label">
+                  <input class="profile__form__additions__item" type="checkbox" name="vitamins" id="vitamins">
+                  <span>Витамины</span>
+                </label>
+              </div>
             </fieldset>
 
-            <input class="profile__form__submit button" type="submit" value="Отправить заявку">
-            <div class="profile__form__required-info">* — Обязательные поля</div>
+            <div class="profile__form__submit">
+              <input class="profile__form__submit__button button" type="submit" value="Отправить заявку">
+              <div class="profile__form__submit__required-info">* — Обязательные поля</div>
+            </div>
           </form>
       </section>
 
       <section class="contacts">
         <div class="contacts__text">
           <div class="contacts__text__slogan"> приглашаем к сотрудничеству дилеров!</div>
-          <div class="contacts__text__address">ул. Большая Конюшенная, д. 19/8 </div>
-          <div class="contacts__text__city">Санкт-Петербург</div>
+          <div class="contacts__text__address">
+            <p>ул. Большая Конюшенная, д. 19/8</p>
+            <p>Санкт-Петербург</p>
+          </div>
         </div>
         <div class="contacts__imgs">
           <div class="contacts__imgs__city"><img src="img/bg-map-mobile@1x.png" alt="Карта города"></div>

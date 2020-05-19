@@ -1,0 +1,125 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+
+  &__text {
+    height: 114px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+
+    &__slogan {
+      margin-left: 19px;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+
+    &__address {
+      margin-right: 25px;
+      min-width: 135px;
+      p {
+        margin: 0;
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.43;
+        letter-spacing: normal;
+        text-align: left;
+        color: #444444;
+      }
+    }
+  }
+
+  &__imgs {
+    margin-top: -35px;
+    z-index: -1;
+    position: relative;
+
+    &__city {
+      img {
+        object-fit: contain;
+        width: 100%;
+      }
+    }
+
+    &__pin {
+      position: absolute;
+      left: 41%;
+      top: 43%;
+      img {
+        z-index: 1;
+        width: 55px;
+        height: 53px;
+      }
+    }
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    &__text {
+      height: 201px;
+
+      &__slogan {
+        max-width: 155px;
+        margin-left: 71px;
+        font-size: 20px;
+      }
+
+      &__address {
+        margin-right: 72px;
+        max-width: 155px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 76px;
+
+        p {
+          text-align: right;
+          font-size: 16px;
+        }
+      }
+    }
+
+    &__imgs {
+      margin: 0;
+      &__city {
+        img {
+          height: 400px;
+          object-fit: fill;
+        }
+      }
+
+      &__pin {
+        img {
+          width: 113px;
+          height: 106px;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    position: relative;
+    &__text {
+      position: absolute;
+      left: 110px;
+      top: 95px;
+      width: 570px;
+    }
+
+    &__imgs {
+      &__pin {
+        left: 1009px;
+        top: 150px;
+      }
+    }
+  }
+}
