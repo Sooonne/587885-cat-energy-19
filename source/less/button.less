@@ -1,6 +1,6 @@
 .button {
   margin-bottom: 25px;
-  max-height: 40px;
+  // max-height: 40px;
   height: 40px;
   min-width: 280px;
   font-size: 16px;
@@ -10,6 +10,7 @@
   color: #ffffff;
   flex-grow: 1;
   background-color: #68b738;
+  box-sizing: border-box;
 
   &--more {
     background-color: #f2f2f2;
@@ -20,7 +21,7 @@
 
 @media (min-width: @tablet-width) {
   .button {
-    flex-grow: 1;
+    flex-grow: 0;
     margin-bottom: 45px;
     padding: 0;
   }

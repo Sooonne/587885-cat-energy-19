@@ -61,11 +61,12 @@
     }
 
     &__img {
-      flex-grow: 1;
       width: 140px;
       height: 144px;
-      background-repeat: no-repeat;
-      background-size: contain;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
     }
 
     &--more {
@@ -135,6 +136,7 @@
       height: 431px;
       flex-direction: column;
       align-items: center;
+      flex-wrap: nowrap;
       border: none;
       margin-top: 140px;
       background-color: #f0f0f0;
@@ -155,6 +157,21 @@
         font-size: 16px;
         width: 248px;
         margin-bottom: 33px;
+      }
+
+      &__img {
+        align-self: center;
+        width: 195px;
+        height: 208px;
+        &--small {
+          margin-top: -46px;
+          margin-bottom: 2px;
+        }
+        &--big {
+          margin-top: -82px;
+          margin-bottom: 39px;
+        }
+
       }
 
       &--more {
@@ -200,7 +217,9 @@
     &__item {
       width: 245px;
       height: 431px;
-
+      &__info {
+        padding: 0 39px;
+      }
     }
   }
 }

@@ -76,13 +76,24 @@
 
   &__visual {
     margin-left: -20px;
-    &__img {
-      display: flex;
-      justify-content: center;
+    &__imgs {
+      // display: flex;
+      // justify-content: center;
+
       img {
+        // height: 232px;
+        // object-fit: contain;
+        // margin: 0 auto;
+      }
+
+      &__cat-before {
         height: 232px;
         object-fit: contain;
         margin: 0 auto;
+      }
+
+      &__cat-after {
+        display: none;
       }
     }
     &__slider {
@@ -179,11 +190,28 @@
 
     &__visual {
       margin: 0;
-      &__img {
+      box-sizing: border-box;
+      &__imgs {
         margin-left: 16px;
-        img {
-          object-fit: contain;
-          height: 499px;
+        height: 499px;
+        position: relative;
+
+        &__container {
+          position: absolute;
+          width: auto;
+          height: auto;
+          overflow: hidden;
+
+          img {
+            height: 499px;
+          }
+        }
+        &__cat-before {
+          display: block;
+          vertical-align: middle;
+        }
+        &__cat-after {
+          display: none;
         }
       }
 
@@ -280,7 +308,7 @@
     &__visual {
       // margin-left: 139px;
 
-      &__img {
+      &__imgs {
         margin: 0;
         margin-bottom: 42px;
       }

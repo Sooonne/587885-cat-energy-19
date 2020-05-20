@@ -73,13 +73,18 @@
 
   &__promo {
     background-image: url("../img/gift-photo-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    // background-size: contain;
+    background-size: cover;
+    // background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
     min-height: 289px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: url("../img/gift-photo-mobile@2x.jpg");
+      background-size: cover;
+    }
 
     &__gift {
       img {
@@ -175,7 +180,12 @@
       width: 100%;
       min-height: 200px;
       justify-content: space-between;
-      background-color: yellowgreen;
+      background-image: url("../img/gift-photo-tablet@1x.jpg");
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background: url("../img/gift-photo-tablet@2x.jpg");
+        background-size: cover;
+      }
 
       &__gift {
         margin-left: 91px;
@@ -242,10 +252,16 @@
 
     &__promo {
       margin: 0;
-      max-width: 250px;
+      max-width: 245px;
       flex-direction: column;
       align-items: center;
       height: 289px;
+      background-image: url("../img/gift-photo-desktop@1x.jpg");
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background: url("../img/gift-photo-desktop@2x.jpg");
+        background-size: cover;
+      }
 
       &__gift {
         margin: 0;
