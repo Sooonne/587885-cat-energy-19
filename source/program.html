@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css rel="stylesheet">
   </head>
   <body>
-
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include> </div>
     <header class="page-header">
       <a class="page-header__logo logo">
         <picture>
@@ -46,10 +47,10 @@
             <div class="profile__form__wrapper-info">
               <fieldset class="profile__form__personal-info profile__form__fieldset">
                 <label class="profile__form__personal-info__label">Имя:*
-                  <input class="profile__form__personal-info__input" type="text" id="name" placeholder="Барсик" required>
+                  <input class="profile__form__personal-info__input" type="text" id="name" placeholder="Барсик" required="">
                 </label>
                 <label class="profile__form__personal-info__label">Вес (кг):*
-                  <input class="profile__form__personal-info__input" type="number" id="weight" placeholder="7" required>
+                  <input class="profile__form__personal-info__input" type="number" id="weight" placeholder="7" required="">
                 </label>
                 <label class="profile__form__personal-info__label">Возраст (лет):
                   <input class="profile__form__personal-info__input" type="number" id="age" placeholder="7">
@@ -58,7 +59,7 @@
 
               <fieldset class="profile__form__program-type profile__form__fieldset">
                 <label class="profile__form__program-type__label">
-                  <input type="radio" name="program-type" value="lose-weigth" checked>
+                  <input type="radio" name="program-type" value="lose-weigth" checked="">
                   <span>Похудение</span>
                 </label>
                 <label class="profile__form__program-type__label">
@@ -77,10 +78,10 @@
                 (владельца кота)</div>
                 <div class="profile__form__contacts__wrapper">
                   <label class="profile__form__contacts__label">E-mail:*
-                    <input class="profile__form__contacts__input" type="email" id="email" placeholder="kuklachev@gmail.com" required>
+                    <input class="profile__form__contacts__input" type="email" id="email" placeholder="kuklachev@gmail.com" required="">
                   </label>
                   <label class="profile__form__contacts__label">Телефон:*
-                    <input class="profile__form__contacts__input" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+                    <input class="profile__form__contacts__input" type="tel" name="tel" placeholder="8 (960) 900-60-90" required="">
                   </label>
                 </div>
             </fieldset>
@@ -96,7 +97,7 @@
               <div class="profile__form__title">Дополнительно</div>
               <div class="profile__form__additions__wrapper">
                 <label class="profile__form__additions__label">
-                  <input class="profile__form__additions__item" type="checkbox" name="sweetener" id="sweetener" checked>
+                  <input class="profile__form__additions__item" type="checkbox" name="sweetener" id="sweetener" checked="">
                   <span>Сахарозаменитель</span>
                 </label>
                 <label class="profile__form__additions__label">
