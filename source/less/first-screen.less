@@ -8,6 +8,12 @@
   background-size: 100% 305px;
   position: left top;
 
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background: url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
   &__title {
     color: @color-white;
     font-size: 36px;
@@ -111,6 +117,13 @@
     flex-direction: column;
     flex-wrap: wrap;
     height: 696px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: url("../img/index-background-desktop@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right;
+    }
 
 
     &__text {

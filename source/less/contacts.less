@@ -34,25 +34,29 @@
   }
 
   &__imgs {
-    margin-top: -35px;
-    z-index: -1;
+    height: 400px;
     position: relative;
+    background: url("../img/bg-map-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-size: 400px auto;
+    background-position-y: -50px;
+    background-position-x: -80px;
 
-    &__city {
-      img {
-        object-fit: contain;
-        width: 100%;
-      }
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: url("../img/bg-map-mobile@2x.png");
+      background-size: 400px auto;
+      background-repeat: no-repeat;
     }
 
     &__pin {
       position: absolute;
-      left: 41%;
-      top: 43%;
+      left: 170px;
+      top: 235px;
       img {
         z-index: 1;
         width: 55px;
         height: 53px;
+        object-fit: cover;
       }
     }
   }
@@ -87,14 +91,17 @@
 
     &__imgs {
       margin: 0;
-      &__city {
-        img {
-          height: 400px;
-          object-fit: fill;
-        }
+      background: url("../img/bg-map-tablet@1x.png");
+      background-size: 768px auto;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background: url("../img/bg-map-tablet@2x.png");
+        background-size: 768px auto;
       }
 
       &__pin {
+        left: 328px;
+        top: 155px;
         img {
           width: 113px;
           height: 106px;
@@ -110,12 +117,21 @@
     position: relative;
     &__text {
       position: absolute;
+      z-index: 1;
       left: 110px;
       top: 95px;
       width: 570px;
     }
 
     &__imgs {
+
+      background: url("../img/bg-map-desktop@1x.png");
+      background-size: 1440px auto;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background: url("../img/bg-map-desktop@2x.png");
+        background-size: 1440px auto;
+      }
       &__pin {
         left: 1009px;
         top: 150px;
