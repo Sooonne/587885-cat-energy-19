@@ -6,14 +6,17 @@
   }
 
   &__title {
-    padding-top: 33px;
+    padding-top: 22px;
+    padding-left: 0;
+    margin: 0;
+    font-weight: normal;
     font-size: 36px;
   }
 
   &__text {
     padding-right: 33px;
     width: 266px;
-    font-family: Arial;
+    font-family: "Arial", sans-serif;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -22,27 +25,32 @@
     letter-spacing: normal;
     text-align: left;
     color: #444444;
+    padding-top: 13px;
   }
 
   &__facts {
+    margin-top: 26px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
     &__item {
       width: 124px;
       height: 56px;
       border-radius: 3px;
       border: solid 1px #cdcdcd;
+      box-sizing: border-box;
 
       &__title {
         text-align: center;
         font-size: 24px;
+        text-transform: uppercase;
         margin: 0;
         padding-top: 7px;
       }
 
       &__info {
-        font-family: Arial;
+        font-family: "Arial", sans-serif;
         font-size: 12px;
         font-weight: normal;
         font-stretch: normal;
@@ -63,7 +71,7 @@
 
     &__price {
       margin: 0 auto;
-      margin-top: 25px;
+      margin-top: 31px;
       font-size: 14px;
       text-transform: uppercase;
 
@@ -75,16 +83,14 @@
   }
 
   &__visual {
-    margin-left: -20px;
-    &__imgs {
-      // display: flex;
-      // justify-content: center;
+    margin-top: 40px;
 
-      img {
-        // height: 232px;
-        // object-fit: contain;
-        // margin: 0 auto;
-      }
+    &__imgs {
+      display: flex;
+      justify-content: center;
+      // img {
+
+      // }
 
       &__cat-before {
         height: 232px;
@@ -96,15 +102,18 @@
         display: none;
       }
     }
+
     &__slider {
+      margin-top: 28px;
       margin-left: 44px;
       margin-right: 39px;
-      padding-bottom: 38px;
+      padding-bottom: 34px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       font-size: 16px;
       text-transform: uppercase;
+      vertical-align: middle;
 
       &__line {
         font-size: 0;
@@ -120,6 +129,7 @@
   &__line {
     display: flex;
     align-items: center;
+
     &__value {
       margin-left: 6px;
       width: 35px;
@@ -133,6 +143,7 @@
 @media (min-width: @tablet-width) {
   .example {
     background: linear-gradient(to bottom, white 619px, #f2f2f2 619px);
+
     &__wrapper {
       // height: 1081px;
       margin: 0 30px;
@@ -143,8 +154,8 @@
 
     &__title {
       font-size: 60px;
-      margin-top: 50px;
-      margin-bottom: 60px;
+      margin-bottom: 20px;
+      margin-top: 28px;
       padding: 0;
     }
 
@@ -152,13 +163,21 @@
       padding-right: 30px;
       min-width: 680px;
       font-size: 16px;
-      margin-bottom: 56px;
+      margin-bottom: 55px;
+      font-family: "Arial", sans-serif;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
     }
 
     &__facts {
       flex-wrap: nowrap;
       justify-content: flex-start;
       align-items: flex-start;
+      margin-top: 0;
+
       &__item {
         width: 162px;
         height: 72px;
@@ -171,28 +190,31 @@
 
         &__info {
           background-color: white;
-          min-width: 125px;
-          padding-top: 10px;
-          padding-left: 8px;
+          min-width: 130px;
+          margin-left: 10px;
           font-size: 14px;
+          padding-top: 10px;
+          padding-left: 2px;
+          padding-right: 2px;
         }
       }
 
       &__price {
-        margin-top: 0;
         margin-right: 0;
         margin-left: auto;
         font-size: 20px;
         max-width: 175px;
         text-align: right;
+        margin-top: 5px;
       }
     }
 
     &__visual {
       margin: 0;
       box-sizing: border-box;
+
       &__imgs {
-        margin-left: 16px;
+        // margin-left: 16px;
         height: 499px;
         position: relative;
 
@@ -206,10 +228,12 @@
             height: 499px;
           }
         }
+
         &__cat-before {
           display: block;
-          vertical-align: middle;
+          height: 499px;
         }
+
         &__cat-after {
           display: none;
         }
@@ -218,13 +242,23 @@
       &__slider {
         margin: 0 70px;
         font-size: 20px;
+        padding-bottom: 0;
+        margin-bottom: 66px;
+        margin-top: 12px;
 
         &__line {
           width: 428px;
           height: 6px;
           border-radius: 2.5px;
           background-color: #dcdcdc;
-          margin-bottom: 75px;
+          // margin-bottom: 75px;
+        }
+
+        &__before,
+        &__after {
+          border-bottom: 1px dotted #dedede;
+          padding-bottom: 6px;
+          vertical-align: top;
         }
       }
     }
@@ -233,11 +267,12 @@
       &__value {
         display: none;
       }
+
       &__pin {
-        margin-left: 45%;
+        margin-left: 200px;
         width: 34px;
         height: 34px;
-        box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
         background-color: white;
         order: solid 1px #cdcdcd;
         border-radius: 50%;
@@ -245,6 +280,7 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
+
         &__control {
           width: 8px;
           height: 8px;
@@ -260,22 +296,25 @@
 @media (min-width: @desktop-width) {
   .example {
     background: linear-gradient(to bottom, white 190px, #f2f2f2 190px);
+
     &__wrapper {
-      margin: 0 110px;
+      width: 1220px;
+      margin: 0 auto;
       height: 652px;
       flex-wrap: wrap;
-      align-items: flex-start;
-
+      justify-content: flex-start;
+      margin-top: 50px;
     }
+
     &__title {
-      margin-top: 0;
-      margin-bottom: 142px;
+      margin-top: 40px;
     }
 
     &__text {
       padding: 0;
       min-width: 432px;
-      margin-bottom: 71px;
+      margin: 0;
+      margin-top: 112px;
     }
 
     &__facts {
@@ -283,10 +322,11 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
+      margin-bottom: 0;
+      margin-top: 70px;
 
       &__item {
         margin: 0;
-        margin-bottom: 62px;
 
         &__info {
           background-color: #f2f2f2;
@@ -296,27 +336,30 @@
 
       &__price {
         margin: 0;
-        max-width: 368px;
+        max-width: 326px;
         width: 368px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-bottom: 75px;
+        // margin-bottom: 70px;
+        margin-top: 50px;
       }
     }
 
     &__visual {
-      // margin-left: 139px;
+      margin-left: 170px;
 
       &__imgs {
-        margin: 0;
-        margin-bottom: 42px;
+        // margin: 0;
+        // margin-bottom: 42px;
+        margin-right: 40px;
       }
 
       &__slider {
         margin: 0;
         padding: 0;
-        margin-bottom: 68px;
+        // margin-bottom: 68px;
+        margin-top: 50px;
         max-width: 570px;
         align-items: center;
 
