@@ -5,9 +5,10 @@
   &__logo {
     width: 128px;
     height: 24px;
-    padding-top: 37px;
+    padding-top: 39px;
     padding-bottom: 31px;
     margin: 0 auto;
+    object-fit: contain;
   }
 }
 
@@ -15,16 +16,20 @@
   &__list {
     display: flex;
     justify-content: space-between;
-    text-align: center;
+    align-items: center;
     list-style-type: none;
     height: 62px;
     padding-inline-start: 0px;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    padding: 0 20px;
+    margin: 0;
   }
 
   &__item__link {
 
     &--vkontakte img {
-      margin-left: 93px;
+      margin-left: 73px;
       width: 22px;
       height: 12px;
       object-fit: contain;
@@ -42,7 +47,7 @@
       width: 10px;
       height: 19px;
       object-fit: contain;
-      margin-right: 102px;
+      margin-right: 82px;
       color: #666666;
     }
   }
@@ -51,17 +56,17 @@
 .copyright {
   display: flex;
   justify-content: space-between;
-  text-align: center;
+  align-items: center;
   min-height: 78px;
   color: #444444;
-  margin-right: 20px;
+  margin-right: 14px;
   margin-left: 20px;
 
   &__logo img {
-    min-width: 27px;
-    min-height: 34px;
+    margin-top: 5px;
+    min-width: 40px;
     color: #f2f2f2;
-    object-fit: contain;
+    object-fit: cover;
   }
 
   &__link {
@@ -75,7 +80,7 @@
   .footer {
     height: 150px;
     padding-left: 31px;
-    padding-right: 30px;
+    padding-right: 23px;
     align-items: center;
     justify-content: space-between;
     display: flex;
@@ -83,14 +88,19 @@
     &__logo {
       padding: 0;
       margin: 0;
+      object-fit: cover;
+      margin-bottom: 10px;
     }
   }
 
   .social {
     &__list {
-      width: 160px;
+      width: 125px;
       height: 28px;
       margin: 0;
+      margin-left: 15px;
+      margin-bottom: 10px;
+      padding: 0;
       align-items: center;
     }
 
@@ -118,13 +128,28 @@
   }
 
   .copyright {
-    width: 162px;
+    width: 170px;
     height: 34px;
     margin: 0;
     align-items: center;
+    margin-bottom: 15px;
 
     &__link {
       padding-bottom: 1px;
     }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer {
+    &__logo {
+      margin-bottom: 0;
+      margin-left: 10px;
+    }
+  }
+
+  .copyright {
+    margin-bottom: 0;
+    margin-right: 10px;
   }
 }

@@ -5,9 +5,10 @@
   &__text {
     height: 114px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     background-color: white;
+    line-height: 1.25;
 
     &__slogan {
       margin-left: 19px;
@@ -16,7 +17,7 @@
     }
 
     &__address {
-      margin-right: 25px;
+      margin-left: 5px;
       min-width: 135px;
       p {
         margin: 0;
@@ -34,24 +35,27 @@
   }
 
   &__imgs {
+    margin-top: -38px;
+    z-index: -1;
     height: 400px;
     position: relative;
     background: url("../img/bg-map-mobile@1x.png");
     background-repeat: no-repeat;
-    background-size: 400px auto;
-    background-position-y: -50px;
-    background-position-x: -80px;
+    background-size: cover;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background: url("../img/bg-map-mobile@2x.png");
-      background-size: 400px auto;
+      // background-size: 400px auto;
       background-repeat: no-repeat;
+      background-size: cover;
+      // background-position-y: -50px;
+      // background-position-x: -80px;
     }
 
     &__pin {
       position: absolute;
-      left: 170px;
-      top: 235px;
+      left: 132px;
+      top: 177px;
       img {
         z-index: 1;
         width: 55px;
@@ -67,6 +71,7 @@
   .contacts {
     &__text {
       height: 201px;
+      justify-content: space-between;
 
       &__slogan {
         max-width: 155px;
@@ -92,16 +97,21 @@
     &__imgs {
       margin: 0;
       background: url("../img/bg-map-tablet@1x.png");
-      background-size: 768px auto;
+      // background-size: 768px auto;
+      background-repeat: no-repeat;
+      background-size: cover;
 
       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
         background: url("../img/bg-map-tablet@2x.png");
-        background-size: 768px auto;
+        // background-size: 768px auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: -10px;
       }
 
       &__pin {
         left: 328px;
-        top: 155px;
+        top: 145px;
         img {
           width: 113px;
           height: 106px;
@@ -118,22 +128,32 @@
     &__text {
       position: absolute;
       z-index: 1;
-      left: 110px;
+      left: 40px;
       top: 95px;
       width: 570px;
+
+      &__address {
+        margin-right: 90px;
+        p {
+          text-align: left;
+        }
+      }
     }
 
     &__imgs {
 
       background: url("../img/bg-map-desktop@1x.png");
-      background-size: 1440px auto;
+      // background-size: 1440px auto;
+      background-size: cover;
 
       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
         background: url("../img/bg-map-desktop@2x.png");
-        background-size: 1440px auto;
+        // background-size: 1440px auto;
+        background-size: cover;
+        background-position-x: -70px;
       }
       &__pin {
-        left: 1009px;
+        left: 935px;
         top: 150px;
       }
     }
