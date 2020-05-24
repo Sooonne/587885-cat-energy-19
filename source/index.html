@@ -41,7 +41,7 @@
 
     <header class="page-header">
       <div class="page-header__wrapper">
-          <a class="page-header__logo logo" href="#">
+          <a class="page-header__logo logo" href="index.html">
             <picture>
               <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -91,8 +91,8 @@
             <div class="options__item__title">Похудение</div>
             <div class="options__item__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</div>
             <div class="options__item__link">
-              <a>Каталог Slim</a>
-              <img src="img/icon-right-arrow-long.svg" alt="right arrow">
+              <a href="#">Каталог Slim
+              <img src="img/icon-right-arrow-long.svg" alt="right arrow"></a>
             </div>
           </li>
           <li class="options__list__item options__item">
@@ -100,8 +100,8 @@
             <div class="options__item__title">Набор массы</div>
             <div class="options__item__text options__item__text--shorter">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</div>
             <div class="options__item__link">
-              <a>Каталог pro</a>
-              <img src="img/icon-right-arrow-long.svg" alt="right arrow">
+              <a href="#">Каталог pro
+              <img src="img/icon-right-arrow-long.svg" alt="right arrow"></a>
             </div>
           </li>
         </ul>
@@ -204,26 +204,34 @@
 
     <footer class="footer">
       <div class="footer__logo logo--footer">
-        <img src="img/logo-footer.svg" alt="Cat Energy">
+        <a  class="footer__logo__link" href="index.html">
+          <img src="img/logo-footer.svg" alt="Cat Energy">
+        </a>
       </div>
 
       <div class="footer__social social">
         <ul class="social__list">
           <li class="social__item social__vk">
             <a class="social__item__link social__item__link--vkontakte" href="https://vk.com/htmlacademy">
-              <img src="img/icon-vk.svg" alt="vk logo">
+              <svg width="22px" height="12px">
+                <use xlink:href="#icon-vk"></use>
+              </svg>
             </a>
           </li>
 
           <li class="social__item social__insta">
             <a class="social__item__link social__item__link--insta" href="https://www.instagram.com/htmlacademy">
-              <img src="img/icon-insta.svg" alt="instagram logo">
+              <svg width="17px" height="17px">
+                <use xlink:href="#icon-insta"></use>
+              </svg>
             </a>
           </li>
 
           <li class="social__item social__fb">
             <a class="social__item__link social__item__link--facebook" href="https://www.facebook.com/htmlacademy">
-              <img src="img/icon-fb.svg" alt="facebook logo">
+              <svg width="10px" height="19px">
+                <use xlink:href="#icon-fb"></use>
+              </svg>
             </a>
           </li>
         </ul>
@@ -231,7 +239,11 @@
 
       <div class="footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive"><img class="copyright__img" src="img/htmlacademy.svg" alt="Cat Energy"></a>
+        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg width="27" height="34" stroke="#666666">
+            <use xlink:href="#icon-htmlacademy"></use>
+          </svg>
+        </a>
       </div>
     </footer>
 
