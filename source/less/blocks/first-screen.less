@@ -4,14 +4,11 @@
   flex-direction: column;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  object-fit: contain;
-  background-size: 100% 305px;
-  // position: left top;
+  background-size: contain;
   background-position-x: center;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background: url("../img/index-background-mobile@2x.jpg");
-    background-size: 100% 305px;
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: center;
@@ -37,6 +34,7 @@
     margin-right: 20px;
     margin-top: -5px;
     text-align: center;
+
     a {
       color: @color-white;
       font-size: 14px;
@@ -76,7 +74,6 @@
     &__title {
       max-width: 430px;
       font-size: 60px;
-      line-height: 1;
       text-align: left;
       color: #111111;
       margin-left: 115px;
@@ -98,10 +95,11 @@
       margin: 0;
       margin-left: 20px;
       margin-top: -10px;
+
       img {
-      object-fit: contain;
-      min-width: 709px;
-      margin: 0;
+        object-fit: contain;
+        min-width: 709px;
+        margin: 0;
       }
     }
 
@@ -112,6 +110,7 @@
       z-index: 2;
       width: 245px;
       height: 52px;
+
       a {
         font-size: 20px;
       }
@@ -138,7 +137,8 @@
       top: 0;
       background-color: #68b738;
       z-index: -1;
-      background: url("../img/index-background-desktop@1x.jpg") no-repeat;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
       background-size: cover;
 
       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -171,6 +171,7 @@
       margin: 0;
       margin-top: 142px;
       margin-left: -310px;
+
       img {
         width: 552px;
         min-width: 552px;

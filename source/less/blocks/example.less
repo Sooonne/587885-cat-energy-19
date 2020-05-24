@@ -7,7 +7,7 @@
 
   &__title {
     padding-top: 22px;
-    padding-left: 0px;
+    padding-left: 0;
     margin: 0;
     font-weight: normal;
     font-size: 36px;
@@ -16,7 +16,7 @@
   &__text {
     padding-right: 33px;
     width: 266px;
-    font-family: Arial;
+    font-family: "Arial", sans-serif;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -33,6 +33,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
     &__item {
       width: 124px;
       height: 56px;
@@ -49,7 +50,7 @@
       }
 
       &__info {
-        font-family: Arial;
+        font-family: "Arial", sans-serif;
         font-size: 12px;
         font-weight: normal;
         font-stretch: normal;
@@ -83,6 +84,7 @@
 
   &__visual {
     margin-top: 40px;
+
     &__imgs {
       display: flex;
       justify-content: center;
@@ -100,6 +102,7 @@
         display: none;
       }
     }
+
     &__slider {
       margin-top: 28px;
       margin-left: 44px;
@@ -126,6 +129,7 @@
   &__line {
     display: flex;
     align-items: center;
+
     &__value {
       margin-left: 6px;
       width: 35px;
@@ -139,6 +143,7 @@
 @media (min-width: @tablet-width) {
   .example {
     background: linear-gradient(to bottom, white 619px, #f2f2f2 619px);
+
     &__wrapper {
       // height: 1081px;
       margin: 0 30px;
@@ -149,7 +154,6 @@
 
     &__title {
       font-size: 60px;
-      margin-top: 50px;
       margin-bottom: 20px;
       margin-top: 28px;
       padding: 0;
@@ -160,8 +164,7 @@
       min-width: 680px;
       font-size: 16px;
       margin-bottom: 55px;
-      font-family: Arial;
-      font-size: 16px;
+      font-family: "Arial", sans-serif;
       font-weight: normal;
       font-stretch: normal;
       font-style: normal;
@@ -174,6 +177,7 @@
       justify-content: flex-start;
       align-items: flex-start;
       margin-top: 0;
+
       &__item {
         width: 162px;
         height: 72px;
@@ -196,7 +200,6 @@
       }
 
       &__price {
-        margin-top: 0;
         margin-right: 0;
         margin-left: auto;
         font-size: 20px;
@@ -209,6 +212,7 @@
     &__visual {
       margin: 0;
       box-sizing: border-box;
+
       &__imgs {
         // margin-left: 16px;
         height: 499px;
@@ -224,10 +228,12 @@
             height: 499px;
           }
         }
+
         &__cat-before {
           display: block;
           height: 499px;
         }
+
         &__cat-after {
           display: none;
         }
@@ -261,11 +267,12 @@
       &__value {
         display: none;
       }
+
       &__pin {
         margin-left: 200px;
         width: 34px;
         height: 34px;
-        box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
         background-color: white;
         order: solid 1px #cdcdcd;
         border-radius: 50%;
@@ -273,6 +280,7 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
+
         &__control {
           width: 8px;
           height: 8px;
@@ -288,6 +296,7 @@
 @media (min-width: @desktop-width) {
   .example {
     background: linear-gradient(to bottom, white 190px, #f2f2f2 190px);
+
     &__wrapper {
       width: 1220px;
       margin: 0 auto;
@@ -295,8 +304,8 @@
       flex-wrap: wrap;
       justify-content: flex-start;
       margin-top: 50px;
-
     }
+
     &__title {
       margin-top: 40px;
     }
@@ -310,11 +319,10 @@
 
     &__facts {
       max-width: 370px;
-
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
-      margin-bottom: 0px;
+      margin-bottom: 0;
       margin-top: 70px;
 
       &__item {
