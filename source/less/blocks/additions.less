@@ -1,4 +1,6 @@
 .additions {
+  margin-top: -112px;
+
   h2 {
     padding-left: 20px;
     overflow: hidden;
@@ -6,7 +8,7 @@
   }
 
   h2::after {
-    content: '';
+    content: "";
     display: inline-block;
     vertical-align: middle;
     box-sizing: border-box;
@@ -14,7 +16,7 @@
     height: 3px;
     background-color: #68b738;
     margin-right: -100%;
-    border: solid #FFF;
+    border: solid white;
     border-width: 0 25px;
   }
 
@@ -25,37 +27,39 @@
   &__list {
     list-style-type: none;
     padding: 0;
+    margin-top: 30px;
   }
 
   &__item {
     border-bottom: 1px solid #ededed;
+    height: 130px;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start;
+    box-sizing: border-box;
 
-    &__title {
+    h3 {
       font-size: 16px;
       text-transform: uppercase;
       margin-right: 100%;
       min-width: 130px;
-      margin-bottom: 15px;
-      margin-top: 14px;
+      margin-top: 10px;
+      margin-bottom: 0;
     }
 
     &__info {
-        font-family: Arial;
-        font-size: 14px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1;
-        letter-spacing: normal;
-        margin-bottom: 14px;
-        color: #444444;
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
+      font-family: "Arial", sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      color: #444444;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 10px;
 
       &__volume {
         text-align: left;
@@ -65,6 +69,10 @@
         text-align: right;
       }
     }
+
+    &__button {
+      margin-bottom: 10px;
+    }
   }
 
   &__item:nth-child(1) {
@@ -72,6 +80,8 @@
   }
 
   &__promo {
+    margin-top: 37px;
+    margin-bottom: 35px;
     background-image: url("../img/gift-photo-mobile@1x.jpg");
     background-size: cover;
     // background-repeat: no-repeat;
@@ -96,7 +106,7 @@
     }
 
     &__text {
-      font-family: Arial;
+      font-family: "Arial", sans-serif;
       font-size: 16px;
       font-weight: normal;
       font-stretch: normal;
@@ -107,6 +117,7 @@
       color: white;
       margin: 0 40px;
       margin-bottom: 43px;
+      max-width: 162px;
     }
   }
 }
@@ -120,7 +131,7 @@
     }
 
     h2::before {
-      content: '';
+      content: "";
       display: inline-block;
       vertical-align: middle;
       box-sizing: border-box;
@@ -128,7 +139,7 @@
       height: 3px;
       background-color: #68b738;
       margin-left: -100%;
-      border: solid #FFF;
+      border: solid #ffffff;
       border-width: 0 37px;
     }
 
@@ -140,30 +151,43 @@
       margin: 0 30px;
     }
 
+    &__list {
+      margin-top: 73px;
+    }
+
     &__item {
       border: 1px solid #cdcdcd;
       // box-sizing: border-box;
-      font-size: 16px;
+      justify-content: space-between;
       align-items: flex-end;
+      height: 140px;
 
-      &__title {
+      h3 {
         font-size: 20px;
         margin-left: 40px;
         margin-right: 0;
-        margin-bottom: 23px;
-        margin-top: 28px;
+        margin-bottom: 10px;
       }
 
       &__info {
-        max-width: 224px;
-        margin-right: 38px;
-        margin-bottom: 23px;
+        max-width: 230px;
+        margin-right: 35px;
+        margin-bottom: 15px;
+        font-size: 16px;
+        justify-content: flex-end;
+
+        &__volume {
+          margin-right: 52px;
+          text-align: right;
+        }
       }
 
       &__button {
-        flex-grow: 1;
+        // flex-grow: 0;
         min-width: 633px;
-        margin: 0 37px 28px 38px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        // margin: 0 37px 28px 38px;
       }
     }
 
@@ -174,7 +198,7 @@
     &__promo {
       max-width: 708px; // think about it
       margin: 0 auto;
-      margin-top: 69px;
+      margin-top: 65px;
       margin-bottom: 76px;
       flex-direction: row;
       width: 100%;
@@ -189,12 +213,13 @@
 
       &__gift {
         margin-left: 91px;
-        margin-bottom: 0px;
+        margin-bottom: 0;
       }
+
       &__text {
         margin: 0;
         margin-right: 125px;
-        max-width: 160px;
+        max-width: 162px;
         text-align: left;
       }
     }
@@ -204,42 +229,59 @@
 
 @media (min-width: @desktop-width) {
   .additions {
+    margin-top: -100px;
+
     h2 {
-      padding-left: 110px;
+      padding-left: 38px;
     }
 
     &__wrapper {
-      margin: 0 110px;
-      margin-top: 75px;
-      margin-bottom: 68px;
+      height: 290px;
+      width: 1220px;
+      margin: 0 auto;
+      margin-top: 70px;
+      margin-bottom: 85px;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
     &__list {
-      margin-right: 80px;
+      margin: 0;
     }
 
     &__item {
       flex-wrap: nowrap;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: center;
       height: 71px;
+      width: 895px;
       border-left: none;
       border-right: none;
 
-      &__title {
-        margin: 0;
-        margin-right: 165px;
+      h3 {
+        margin-right: auto;
+        margin-left: 0;
       }
 
       &__info {
-        margin: 0;
-        margin-right: 39px;
-        margin-top: 8px;
-        max-width: 284px;
+        max-width: 285px;
+        // margin: 0;
+        justify-content: space-between;
+        // margin-right: -130px;
+        // margin-top: 5px;
+        // margin-left: 150px;
+        margin-bottom: 0;
+        margin-top: 5px;
 
+        &__volume {
+          margin: 0;
+        }
+
+        &__price {
+          text-align: left;
+          width: 44px;
+        }
       }
 
       &__button {
