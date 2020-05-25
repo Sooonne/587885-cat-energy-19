@@ -41,7 +41,7 @@
 
   &__imgs {
     margin-top: -38px;
-    z-index: -1;
+    // z-index: -1;
     height: 400px;
     position: relative;
     background: url("../img/bg-map-mobile@1x.png");
@@ -59,8 +59,8 @@
 
     &__pin {
       position: absolute;
-      left: 132px;
-      top: 177px;
+      top: calc(50% - 42px);
+      left: calc(50% - 30px);
 
       img {
         z-index: 1;
@@ -116,8 +116,8 @@
       }
 
       &__pin {
-        left: 328px;
-        top: 145px;
+        top: calc(50% - 53px);
+        left: calc(40% + 15px);
 
         img {
           width: 113px;
@@ -135,7 +135,7 @@
 
     &__text {
       position: absolute;
-      z-index: 1;
+      z-index: 3;
       left: 40px;
       top: 95px;
       width: 570px;
@@ -163,9 +163,17 @@
       }
 
       &__pin {
-        left: 935px;
-        top: 150px;
+        top: calc(50% - 50px);
+        left: calc(70% + 18px);
       }
     }
   }
+}
+
+.contacts__map {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  border: none;
 }

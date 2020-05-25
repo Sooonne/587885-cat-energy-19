@@ -1,5 +1,5 @@
 .catalog {
-  h1 {
+  &__title {
     font-size: 36px;
     font-weight: normal;
     text-align: left;
@@ -30,6 +30,12 @@
     &__text {
       display: flex;
       flex-direction: column;
+
+      &--more {
+        align-self: center;
+        margin-left: 15px;
+        margin-top: -5px;
+      }
     }
 
     &__title {
@@ -46,6 +52,15 @@
 
       a {
         color: black;
+      }
+
+      &--more {
+        margin: 0;
+        max-width: 205px;
+        font-size: 16px;
+        line-height: 1.25;
+        text-align: center;
+        text-transform: uppercase;
       }
     }
 
@@ -70,49 +85,8 @@
       td:nth-child(2n + 1) {
         text-align: left;
       }
-    }
 
-    &__img {
-      width: 140px;
-      height: 144px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: -1;
-      margin-bottom: 0;
-    }
-
-    &--more {
-      border-bottom: 1px solid #ededed;
-      display: flex;
-      flex-direction: column;
-
-      &__img {
-        width: 31px;
-        height: 31px;
-        object-fit: contain;
-        opacity: 0.2;
-        margin: 0 auto;
-        margin-bottom: 25px;
-        margin-top: 27px;
-      }
-
-      &__text {
-        align-self: center;
-        margin-left: 15px;
-        margin-top: -5px;
-      }
-
-      &__title {
-        margin: 0;
-        max-width: 205px;
-        font-size: 16px;
-        line-height: 1.25;
-        text-align: center;
-        text-transform: uppercase;
-      }
-
-      &__info {
+      &--more {
         font-family: "Arial", sans-serif;
         font-size: 12px;
         font-weight: normal;
@@ -125,6 +99,37 @@
         margin-top: 10px;
         margin-left: -15px;
       }
+    }
+
+    &__img {
+      width: 140px;
+      height: 144px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: -1;
+      margin-bottom: 0;
+
+      &--more {
+        width: 31px;
+        height: 31px;
+        object-fit: contain;
+        opacity: 0.2;
+        margin: 0 auto;
+        margin-bottom: 25px;
+        margin-top: 27px;
+
+        img {
+          width: 31px;
+          height: 31px;
+        }
+      }
+    }
+
+    &--more {
+      border-bottom: 1px solid #ededed;
+      display: flex;
+      flex-direction: column;
     }
 
     &__button {
@@ -140,7 +145,7 @@
   .catalog {
     margin: 0 30px;
 
-    h1 {
+    &__title {
       font-size: 60px;
       text-align: left;
       margin-left: 0;
@@ -170,6 +175,11 @@
         flex-grow: 0;
         margin: 0;
         margin-bottom: 60px;
+
+        &--more {
+          margin-bottom: 80px;
+          text-align: center;
+        }
       }
 
       &__title {
@@ -177,6 +187,12 @@
         text-align: center;
         font-size: 20px;
         margin-top: 0;
+
+        &--more {
+          max-width: 135px;
+          margin: 0;
+          margin-bottom: 10px;
+        }
       }
 
       &__info {
@@ -188,6 +204,12 @@
           height: 30px;
           border-bottom: 1px solid #cccccc;
         }
+
+        &--more {
+          font-size: 16px;
+          max-width: 170px;
+          margin-left: 0;
+        }
       }
 
       &__img {
@@ -196,6 +218,18 @@
         height: 208px;
         z-index: 2;
         margin-bottom: 30px;
+
+        &--more {
+          width: 61px;
+          height: 61px;
+          margin-bottom: 40px;
+          background-color: transparent;
+
+          img {
+            width: 61px;
+            height: 61px;
+          }
+        }
       }
 
       &--more {
@@ -204,30 +238,6 @@
         justify-content: flex-end;
         background-color: transparent;
         border: 1px solid #cdcdcd;
-
-
-        &__img {
-          width: 61px;
-          height: 61px;
-          margin-bottom: 40px;
-          background-color: transparent;
-        }
-
-        &__text {
-          margin-bottom: 80px;
-        }
-
-        &__title {
-          max-width: 135px;
-          margin: 0;
-          margin-bottom: 10px;
-        }
-
-        &__info {
-          font-size: 16px;
-          max-width: 170px;
-          margin-left: 0;
-        }
       }
     }
   }
@@ -236,11 +246,10 @@
 
 @media (min-width: @desktop-width) {
   .catalog {
-    // margin: 0 110px;
     max-width: 1220px;
     margin: 0 auto;
 
-    h1 {
+    &__title {
       margin-top: 60px;
     }
 

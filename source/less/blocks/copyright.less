@@ -4,7 +4,7 @@
   align-items: center;
   min-height: 78px;
   color: #444444;
-  margin-right: 14px;
+  margin-right: 20px;
   margin-left: 20px;
 
 
@@ -23,8 +23,10 @@
 
   &__logo svg {
     margin-top: 5px;
-    object-fit: cover;
+    object-fit: contain;
     fill: #666666;
+    width: 27px;
+    height: 34px;
   }
 
   &__link {
@@ -48,6 +50,10 @@
 
     &__link {
       padding-bottom: 1px;
+    }
+
+    &__logo {
+      margin-right: 10px;
     }
   }
 }
