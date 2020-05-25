@@ -6,6 +6,11 @@
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.min.css" rel="stylesheet">
 
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async></script>
   </head>
   <body>
     <div style="display:none">
@@ -77,7 +82,7 @@
             </div>
 
             <fieldset class="profile__form__contacts profile__form__fieldset">
-              <div class="profile__form__title profile__form__title--two-strings profile__form__contacts__title">Контактные данные <br>
+              <div class="profile__form__title profile__form__title--two-strings profile__form__contacts__title">Контактные данные
                 (владельца кота)</div>
                 <div class="profile__form__contacts__wrapper">
 
@@ -139,61 +144,64 @@
       </section>
 
       <section class="contacts">
-        <div class="contacts__text contacts__text--grey">
-          <div class="contacts__text__slogan"> приглашаем <br> к сотрудничеству дилеров!</div>
+        <div class="contacts__text">
+          <div class="contacts__text__slogan"> приглашаем к сотрудничеству дилеров!</div>
           <div class="contacts__text__address">
             <p>ул. Большая Конюшенная, д. 19/8</p>
             <p>Санкт-Петербург</p>
           </div>
         </div>
         <div class="contacts__imgs">
+          <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Abb21c24e4ea91fd7454a0443fdbf9b764362226fe02a30c591d5e1108bc18196&amp;source=constructor" frameborder="0" aria-label="Интерактивная карта"></iframe>
           <div class="contacts__imgs__pin"><img src="img/map-pin.png" alt="Наше местоположение на городе"></div>
         </div>
       </section>
 
-      <footer class="footer">
-        <div class="footer__logo logo--footer">
-          <a  class="footer__logo__link" href="index.html">
-            <img src="img/logo-footer.svg" alt="Cat Energy">
-          </a>
-        </div>
+    </main>
 
-        <div class="footer__social social">
-          <ul class="social__list">
-            <li class="social__item social__vk">
-              <a class="social__item__link social__item__link--vkontakte" href="https://vk.com/htmlacademy">
-                <svg width="22px" height="12px">
-                  <use xlink:href="#icon-vk"></use>
-                </svg>
-              </a>
-            </li>
+    <footer class="footer">
+      <div class="footer__logo">
+        <a  class="footer__logo__link" href="index.html">
+          <img src="img/logo-footer.svg" alt="Cat Energy">
+        </a>
+      </div>
 
-            <li class="social__item social__insta">
-              <a class="social__item__link social__item__link--insta" href="https://www.instagram.com/htmlacademy">
-                <svg width="17px" height="17px">
-                  <use xlink:href="#icon-insta"></use>
-                </svg>
-              </a>
-            </li>
+      <div class="footer__social social">
+        <ul class="social__list">
+          <li class="social__item social__vk">
+            <a class="social__item__link social__item__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="VK">
+              <svg width="22px" height="12px">
+                <use xlink:href="#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
 
-            <li class="social__item social__fb">
-              <a class="social__item__link social__item__link--facebook" href="https://www.facebook.com/htmlacademy">
-                <svg width="10px" height="19px">
-                  <use xlink:href="#icon-fb"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+          <li class="social__item social__insta">
+            <a class="social__item__link social__item__link--insta" href="https://www.instagram.com/htmlacademy" aria-label="Facebook">
+              <svg width="17px" height="17px">
+                <use xlink:href="#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
 
-        <div class="footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg width="27" height="34" stroke="#666666">
-              <use xlink:href="#icon-htmlacademy"></use>
-            </svg>
-          </a>
-        </div>
-      </footer>
+          <li class="social__item social__fb">
+            <a class="social__item__link social__item__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Facebook">
+              <svg width="10px" height="19px">
+                <use xlink:href="#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__copyright copyright">
+        <a aria-label="HTMLacademy" class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a aria-label="HTMLacademy" class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg width="27" height="34">
+            <use xlink:href="#icon-htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
+    </footer>
   </body>
 </html>

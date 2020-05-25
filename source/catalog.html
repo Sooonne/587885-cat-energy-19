@@ -6,30 +6,11 @@
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.min.css" rel="stylesheet">
 
-    <!-- <style>
-      html {
-        background-repeat: no-repeat;
-        background-position:  50% 0;
-        /* Mobile layout by default */
-        background-image: url( "design/cat-energy-catalog-mobile.png" );
-      }
-      /* Tablet */
-      @media ( min-width: 768px ) {
-        html {
-          /* Tablet layout */
-          background-image: url( "design/cat-energy-catalog-tablet.png" );
-        }
-      }
-      /* Desktop */
-      @media ( min-width: 1300px ) {
-        html {
-          /* Desktop layout */
-          background-image: url( "design/cat-energy-catalog-desktop.png" );
-        }
-      }
-    </style>
-    <link rel="stylesheet" href="js/styles.css">
-    <script src="js/script.js"></script> -->
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async></script>
   </head>
   <body>
 
@@ -65,7 +46,7 @@
 
     <main>
       <section class="catalog">
-        <h1>Каталог продукции</h1>
+        <h1 class="catalog__title">Каталог продукции</h1>
 
         <ul class="catalog__list">
           <li class="catalog__list__item catalog__item">
@@ -277,89 +258,90 @@
           </li>
 
           <li class="catalog__list__item catalog__item catalog__item--more">
-            <div class="catalog__item--more__img">
+            <div class="catalog__item__img--more catalog__item__img">
               <img src="img/icon-plus-mobile.svg" alt="Plus sign">
             </div>
-            <div class="catalog__item--more__text catalog__item__text">
-              <h2 class="catalog__item--more__title catalog__item__title">Показать еще 100500 товаров</h2>
-              <div class="catalog__item--more__info">На самом деле вкусов гораздо больше!</div>
+            <div class="catalog__item__text--more catalog__item__text">
+              <h2 class="catalog__item__title--more catalog__item__title">Показать еще 100500 товаров</h2>
+              <div class="catalog__item__info---more catalog__item__info">На самом деле вкусов гораздо больше!</div>
             </div>
-            <button type="button" class="button button--more catalog__item__button catalog__item__button--more catalog__item--more__button">Показать все</button>
+            <button type="button" class="button button--more catalog__item__button catalog__item__button--more">Показать все</button>
           </li>
         </ul>
       </section>
-    </main>
 
-    <section class="additions">
-      <h2>Дополнительные товары</h2>
-      <div class="additions__wrapper">
-        <ul class="additions__list">
-          <li class="additions__list__item additions__item">
-            <h3 class="additions__item__title">Сахарозаменитель</h3>
-            <div class="additions__item__info">
-              <div class="additions__item__info__volume">1 упаковка (100 г)</div>
-              <div class="additions__item__info__price">200 Р.</div>
+      <section class="additions">
+        <h2 class="additions__title">Дополнительные товары</h2>
+        <div class="additions__wrapper">
+          <ul class="additions__list">
+            <li class="additions__list__item additions__item">
+              <h3 class="additions__item__title">Сахарозаменитель</h3>
+              <div class="additions__item__info">
+                <div class="additions__item__info__volume">1 упаковка (100 г)</div>
+                <div class="additions__item__info__price">200 Р.</div>
+              </div>
+              <button type="button" class="additions__item__button button">Заказать</button>
+            </li>
+
+            <li class="additions__list__item additions__item">
+              <h3 class="additions__item__title">Питьевая вода</h3>
+              <div class="additions__item__info">
+                <div class="additions__item__info__volume">5 литров</div>
+                <div class="additions__item__info__price">50 Р.</div>
+              </div>
+              <button type="button" class="additions__item__button button">Заказать</button>
+            </li>
+
+            <li class="additions__list__item additions__item">
+              <h3 class="additions__item__title">Молоко</h3>
+              <div class="additions__item__info">
+                <div class="additions__item__info__volume">1 литр</div>
+                <div class="additions__item__info__price">100 Р.</div>
+              </div>
+              <button type="button" class="additions__item__button button">Заказать</button>
+            </li>
+
+            <li class="additions__list__item additions__item">
+              <h3 class="additions__item__title">Витамины</h3>
+              <div class="additions__item__info">
+                <div class="additions__item__info__volume">1 упаковка (30 г)</div>
+                <div class="additions__item__info__price">300 Р.</div>
+              </div>
+              <button type="button" class="additions__item__button button">Заказать</button>
+            </li>
+          </ul>
+
+          <div class="additions__promo">
+            <div class="additions__promo__gift">
+              <!-- <img src="img/icon-gift.svg" alt="Подарок"> -->
+              <svg width="56px" height="61px" fill="white">
+                <use xlink:href="#icon-gift"></use>
+              </svg>
             </div>
-            <button type="button" class="additions__item__button button">Заказать</button>
-          </li>
-
-          <li class="additions__list__item additions__item">
-            <h3 class="additions__item__title">Питьевая вода</h3>
-            <div class="additions__item__info">
-              <div class="additions__item__info__volume">5 литров</div>
-              <div class="additions__item__info__price">50 Р.</div>
-            </div>
-            <button type="button" class="additions__item__button button">Заказать</button>
-          </li>
-
-          <li class="additions__list__item additions__item">
-            <h3 class="additions__item__title">Молоко</h3>
-            <div class="additions__item__info">
-              <div class="additions__item__info__volume">1 литр</div>
-              <div class="additions__item__info__price">100 Р.</div>
-            </div>
-            <button type="button" class="additions__item__button button">Заказать</button>
-          </li>
-
-          <li class="additions__list__item additions__item">
-            <h3 class="additions__item__title">Витамины</h3>
-            <div class="additions__item__info">
-              <div class="additions__item__info__volume">1 упаковка (30 г)</div>
-              <div class="additions__item__info__price">300 Р.</div>
-            </div>
-            <button type="button" class="additions__item__button button">Заказать</button>
-          </li>
-        </ul>
-
-        <div class="additions__promo">
-          <div class="additions__promo__gift">
-            <!-- <img src="img/icon-gift.svg" alt="Подарок"> -->
-            <svg width="56px" height="61px" fill="white">
-              <use xlink:href="#icon-gift"></use>
-            </svg>
+            <div class="additions__promo__text"> Закажите все
+              и получите чехол для кота в подарок!</div>
           </div>
-          <div class="additions__promo__text"> Закажите все <br>
-            и получите чехол для кота в подарок!</div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="contacts">
-      <div class="contacts__text">
-        <div class="contacts__text__slogan"> приглашаем <br> к сотрудничеству дилеров!</div>
-        <div class="contacts__text__address">
-          <p>ул. Большая Конюшенная, д. 19/8</p>
-          <p>Санкт-Петербург</p>
+      <section class="contacts">
+        <div class="contacts__text">
+          <div class="contacts__text__slogan"> приглашаем к сотрудничеству дилеров!</div>
+          <div class="contacts__text__address">
+            <p>ул. Большая Конюшенная, д. 19/8</p>
+            <p>Санкт-Петербург</p>
+          </div>
         </div>
-      </div>
-      <div class="contacts__imgs">
-        <div class="contacts__imgs__pin"><img src="img/map-pin.png" alt="Наше местоположение на городе"></div>
-      </div>
-    </section>
+        <div class="contacts__imgs">
+          <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Abb21c24e4ea91fd7454a0443fdbf9b764362226fe02a30c591d5e1108bc18196&amp;source=constructor" frameborder="0" aria-label="Интерактивная карта"></iframe>
+          <div class="contacts__imgs__pin"><img src="img/map-pin.png" alt="Наше местоположение на городе"></div>
+        </div>
+      </section>
+    </main>
 
 
     <footer class="footer">
-      <div class="footer__logo logo--footer">
+      <div class="footer__logo">
         <a  class="footer__logo__link" href="index.html">
           <img src="img/logo-footer.svg" alt="Cat Energy">
         </a>
@@ -368,7 +350,7 @@
       <div class="footer__social social">
         <ul class="social__list">
           <li class="social__item social__vk">
-            <a class="social__item__link social__item__link--vkontakte" href="https://vk.com/htmlacademy">
+            <a class="social__item__link social__item__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="VK">
               <svg width="22px" height="12px">
                 <use xlink:href="#icon-vk"></use>
               </svg>
@@ -376,7 +358,7 @@
           </li>
 
           <li class="social__item social__insta">
-            <a class="social__item__link social__item__link--insta" href="https://www.instagram.com/htmlacademy">
+            <a class="social__item__link social__item__link--insta" href="https://www.instagram.com/htmlacademy" aria-label="Facebook">
               <svg width="17px" height="17px">
                 <use xlink:href="#icon-insta"></use>
               </svg>
@@ -384,7 +366,7 @@
           </li>
 
           <li class="social__item social__fb">
-            <a class="social__item__link social__item__link--facebook" href="https://www.facebook.com/htmlacademy">
+            <a class="social__item__link social__item__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Facebook">
               <svg width="10px" height="19px">
                 <use xlink:href="#icon-fb"></use>
               </svg>
@@ -394,9 +376,9 @@
       </div>
 
       <div class="footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg width="27" height="34" stroke="#666666">
+        <a aria-label="HTMLacademy" class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a aria-label="HTMLacademy" class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg width="27" height="34">
             <use xlink:href="#icon-htmlacademy"></use>
           </svg>
         </a>

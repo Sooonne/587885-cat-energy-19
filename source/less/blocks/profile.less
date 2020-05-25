@@ -1,5 +1,5 @@
 .profile {
-  h1 {
+  &__title {
     font-size: 36px;
     font-weight: normal;
     font-stretch: normal;
@@ -7,7 +7,7 @@
     margin: 22px 0 30px 20px;
   }
 
-  h2 {
+  &__subtitle {
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -33,15 +33,18 @@
       overflow: hidden;
 
       &--two-strings {
-        position: relative;
+        // position: relative;
         min-height: 50px;
         line-height: 0.95;
+        // max-width: 190px;
+        padding-right: 110px;
       }
 
       &--two-strings::after {
         position: absolute;
         top: 12px;
         left: 180px;
+        // z-index: 2;
       }
     }
 
@@ -67,7 +70,7 @@
         border: 1px solid #cdcdcd;
         padding-left: 16px;
         font-size: 16px;
-        font-family: "Oswald Regular", sans-serif;
+        font-family: "Oswald Regular", "Arial", sans-serif;
         box-sizing: border-box;
       }
 
@@ -81,12 +84,12 @@
         // }
       }
 
-      input:invalid {
+      input:focus:invalid {
         border: 2px solid #ff8282;
       }
 
 
-      input:invalid + .profile__form__contacts__img {
+      input:focus:invalid + .profile__form__contacts__img {
         svg {
           fill: #ff8282;
         }
@@ -252,7 +255,7 @@
 
         textarea {
           border: 1px solid #cdcdcd;
-          font-family: "Oswald Regular", sans-serif;
+          font-family: "Oswald Regular", "Arial", sans-serif;
           font-size: 16px;
           margin-left: 20px;
           margin-right: 20px;
@@ -358,12 +361,12 @@
 
 @media (min-width: @tablet-width) {
   .profile {
-    h1 {
+    &__title {
       font-size: 60px;
       margin: 40px 0 43px 30px;
     }
 
-    h2 {
+    &__subtitle {
       font-size: 20px;
       margin-left: 70px;
       margin-bottom: 69px;
@@ -557,16 +560,21 @@
       }
     }
   }
+
+  .profile__form__additions__item:checked + span::after {
+    top: 10px;
+    left: 10px;
+  }
 }
 
 
 @media (min-width: @desktop-width) {
   .profile {
-    h1 {
+    &__title {
       margin: 61px 0 40px 40px;
     }
 
-    h2 {
+    &__subtitle {
       margin-left: 40px;
     }
 

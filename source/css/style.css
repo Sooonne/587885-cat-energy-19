@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Oswald Regular";
+  font-family: "Oswald Regular", sans-serif;
   src: url("../fonts/oswaldregular.woff") format("woff");
   font-weight: normal;
   font-stretch: normal;
@@ -9,7 +9,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "Oswald Regular", sans-serif;
+  font-family: "Oswald Regular", "Arial", sans-serif;
 }
 a {
   text-decoration: none;
@@ -1927,7 +1927,7 @@ a {
   border: 1px solid #cdcdcd;
   padding-left: 16px;
   font-size: 16px;
-  font-family: "Oswald Regular";
+  font-family: "Oswald Regular", "Arial", sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -2044,7 +2044,7 @@ a {
 }
 .profile__form__comments__textarea textarea {
   border: 1px solid #cdcdcd;
-  font-family: "Oswald Regular";
+  font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 16px;
   margin-left: 20px;
   margin-right: 20px;

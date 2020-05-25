@@ -1,13 +1,15 @@
 .additions {
-  margin-top: -112px;
+  // margin-top: -112px;
+  // margin-top: 205x;
 
-  h2 {
+  &__title {
+    margin-top: 22px;
     padding-left: 20px;
     overflow: hidden;
     font-size: 24px;
   }
 
-  h2::after {
+  &__title::after {
     content: "";
     display: inline-block;
     vertical-align: middle;
@@ -125,12 +127,13 @@
 
 @media (min-width: @tablet-width) {
   .additions {
-    h2 {
+    margin-top: -105px;
+    &__title {
       font-size: 36px;
       padding-left: 67px;
     }
 
-    h2::before {
+    &__title::before {
       content: "";
       display: inline-block;
       vertical-align: middle;
@@ -143,7 +146,7 @@
       border-width: 0 37px;
     }
 
-    h2::after {
+    &__title::after {
       border-width: 0 37px;
     }
 
@@ -229,9 +232,9 @@
 
 @media (min-width: @desktop-width) {
   .additions {
-    margin-top: -100px;
+    margin-top: -95px;
 
-    h2 {
+    &__title {
       padding-left: 38px;
     }
 
