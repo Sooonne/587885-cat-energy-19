@@ -1,48 +1,47 @@
 .work-points {
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding-inline-start: 0;
   margin-bottom: 22px;
+}
 
-  &__item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    height: 60px;
+.work-points__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 60px;
+}
 
-    &__img {
-      margin-top: 5px;
-      min-width: 60px;
-      height: 60px;
-      background-color: #68b738;
-      display: flex;
-      align-items: center;
+.work-points__item__img {
+  margin-top: 5px;
+  min-width: 60px;
+  height: 60px;
+  background-color: #68b738;
+  display: flex;
+  align-items: center;
+}
 
-      img {
-        display: block;
-        margin: auto auto;
-      }
-    }
+.work-points__item__img img {
+  display: block;
+  margin: auto auto;
+}
 
-    &__description {
-      margin-left: 20px;
-      font-family: "Arial", sans-serif;
-      font-size: 14px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.29;
-      letter-spacing: normal;
-      text-align: left;
-      color: #444444;
-    }
+.work-points__item__description {
+  margin-left: 20px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: left;
+  color: #444444;
+}
 
-    &__step {
-      display: none;
-    }
-  }
+.work-points__item__step {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -51,94 +50,83 @@
     flex-direction: row;
     flex-wrap: wrap;
     flex-grow: 0;
-    // margin: 0 auto;
     justify-content: flex-start;
     align-items: flex-start;
     margin: 0;
     margin-bottom: -25px;
+  }
 
-    &__item {
-      // min-width: 240px;
-      height: 235px;
-      flex-direction: column;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      // justify-content: space-between;
-      margin-bottom: 82px;
+  .work-points__item {
+    height: 235px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 82px;
+  }
 
-      &__img {
-        // margin-top: -20px;
-        width: 80px;
-        height: 80px;
-      }
+  .work-points__item:nth-child(1) {
+    margin-right: 134px;
 
-      &__description {
-        font-family: "Arial", sans-serif;
-        font-size: 16px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.5;
-        letter-spacing: normal;
-        margin-left: 0;
-        margin-bottom: 0;
-        margin-top: 32px;
-        max-width: 250px;
-      }
-
-      &__step {
-        display: block;
-        font-size: 281px;
-        color: #f2f2f2;
-        margin-left: -140px;
-        margin-top: -105px;
-        z-index: -1;
-        // align-self: flex-start;
-        // justify-self: flex-start;
-      }
-    }
-
-    &__item:nth-child(1) {
-      margin-right: 134px;
-      // margin-bottom: 100px;
-      .work-points__item__step {
-        margin-left: -130px;
-      }
-    }
-
-    &__item:nth-child(3) {
-      margin-right: 134px;
-      margin-bottom: 0;
+    .work-points__item__step {
+      margin-left: -130px;
     }
   }
-}
 
+  .work-points__item:nth-child(3) {
+    margin-right: 134px;
+    margin-bottom: 0;
+  }
+
+  .work-points__item__img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .work-points__item__description {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 32px;
+    max-width: 250px;
+  }
+
+  .work-points__item__step {
+    display: block;
+    font-size: 281px;
+    color: #f2f2f2;
+    margin-left: -140px;
+    margin-top: -105px;
+    z-index: -1;
+  }
+}
 
 @media (min-width: @desktop-width) {
   .work-points {
     justify-content: flex-start;
-    // max-width: 1220px;
-    // margin: 0 auto;
-    &__item {
-      margin-bottom: 0;
-    }
+  }
 
-    &__item:nth-child(1) {
-      margin-right: 75px;
-      margin-left: 10px;
-    }
+  .work-points__item {
+    margin-bottom: 0;
+  }
 
-    &__item:nth-child(2) {
-      margin-right: 75px;
-    }
+  .work-points__item:nth-child(1) {
+    margin-right: 75px;
+    margin-left: 10px;
+  }
 
-    &__item:nth-child(3) {
-      margin-right: 75px;
-    }
+  .work-points__item:nth-child(2),
+  .work-points__item:nth-child(3) {
+    margin-right: 75px;
+  }
 
-    &__item:nth-child(4) {
-      margin-right: 0;
-    }
+  .work-points__item:nth-child(4) {
+    margin-right: 0;
   }
 }

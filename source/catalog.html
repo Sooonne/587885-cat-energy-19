@@ -13,6 +13,7 @@
       // Picture element HTML5 shiv
       document.createElement( "picture" );
     </script>
+    <script src="js/open-mobile-menu.js" async></script>
     <script src="js/picturefill.js" async></script>
   </head>
   <body>
@@ -31,10 +32,11 @@
           </a>
 
           <div class="page-header__button">
-            <button class="page-header__toggle" type="button"><img src="img/icon-close.svg" aria-label="Close menu"></button>
+            <button class="page-header__toggle page-header__toggle--close visually-hidden" type="button"><img src="img/icon-close.svg" aria-label="Close menu"></button>
+            <button class="page-header__toggle page-header__toggle--open" type="button"><img src="img/icon-mobile-menu.svg" aria-label="Open menu"></button>
           </div>
       </div>
-        <ul class="page-header__site-list site-list">
+        <ul class="page-header__site-list site-list visually-hidden-menu">
           <li class="site-list__item">
             <a href="index.html">ГЛАВНАЯ</a>
           </li>
@@ -349,7 +351,7 @@
       </section>
 
       <section class="contacts">
-        <div class="contacts__text">
+        <div class="contacts__text contacts__text--grey">
           <div class="contacts__text__slogan"> приглашаем к сотрудничеству дилеров!</div>
           <div class="contacts__text__address">
             <p>ул. Большая Конюшенная, д. 19/8</p>
